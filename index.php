@@ -15,9 +15,22 @@
 </div>
 <ul class="list" >
 <li class="item">
-    <p>Item1</p>
+    <p class="it">Item1</p>
+    <div class="buttons">
     <button type="submit" name=" " id="check">Check</button>
     <button type="submit" name=" " id="delete">Delete</button>
+    </div>
+</li>
+</ul>
+<hr>
+<ul class="list" >
+<li class="item">
+    <p class="it">Item1</p>
+   
+    <div class="buttons">
+    <button type="submit" name=" " id="check">Check</button>
+    <button type="submit" name=" " id="delete">Delete</button>
+    </div>
 </li>
 </ul>
 </form>
