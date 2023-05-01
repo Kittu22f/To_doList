@@ -14,7 +14,11 @@
 <button type="submit" id = "add">ADD</button>
 </div>
 <ul class="list" >
-<li class="item"></li>
+<li class="item">
+    <p>Item1</p>
+    <button type="submit" name=" " id="check">Check</button>
+    <button type="submit" name=" " id="delete">Delete</button>
+</li>
 </ul>
 </form>
 </body>
