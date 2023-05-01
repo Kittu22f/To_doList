@@ -3,18 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Untitled Document</title>
+<link rel= "stylesheet" href="style.css">
 </head>
-
 <body>
-<html>
-<body>
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
+<div class = "container"> 
+<h1 class="top-heading">ToDo List Application</h1>
+<form action="" method="post">
+<div class="input-container">
+<input type="text" name="inputBox" id="inputBox">
+<button type="submit" id = "add">ADD</button>
+</div>
+<ul class="list" >
+<li class="item"></li>
+</ul>
 </form>
+</body>
+</html>
 
-</body>
-</html>
-</body>
-</html>
+
