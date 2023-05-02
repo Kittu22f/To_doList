@@ -10,12 +10,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   }
     }
     else if(isset($_POST["checked"]))
-    {
-        update_items();
+    { 
+        update_itm($_POST["checked"]);
     }
     else if(isset($_POST["deleted"]))
     {
-        delete_items();
+        delete_items($_POST["deleted"]);
     }
 }
 

@@ -26,4 +26,26 @@ function get_items()
    //print_r($result);
    return $result;
 }
+function update_itm($id)
+{
+    $con = make_connection();
+    $query = " update todolist set status='1' where id = '$id' ";
+    $result = $con->query($query);
+    return $result;
+}
+function get_items_Checked()
+{
+    $con = make_connection();
+    $query = " select id,item from todolist where status='1'";
+   $result =  $con->query($query);
+   //print_r($result);
+   return $result;
+}
+function delete_items($id)
+{
+    $con = make_connection();
+    $query = " delete from  todolist  where id = '$id' ";
+    $result = $con->query($query);
+    return $result;
+}
 ?>

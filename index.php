@@ -15,7 +15,7 @@ include("database.php");
 <h1 class="top-heading">ToDo List Application</h1>
 <form action="handleAction.php" method="post">
 <div class="input-container">
-<input type="text" name="inputBox" id="inputBox" required>
+<input type="text" name="inputBox" id="inputBox" >
 <button type="submit"  name = "add" id = "add">ADD</button>
 </div>
 <ul class="list" >
@@ -25,12 +25,27 @@ while($row=$itemList->fetch_assoc())
 {
 ?>
 <li class="item">
-    <p class="it"><?php echo $row["item"] ?></p>
-    <div class="buttons">
-    <button type="submit" name=" checked" id="check">Check</button>
-    <button type="submit" name=" deleted" id="delete">Delete</button>
-    
-    </div>
+<p class="it"><?php echo $row["item"] ?></p>
+<div class="buttons">
+<button type="submit" name=" checked" id="check" value="<?php echo $row["id"] ?>">Check</button>
+<button type="submit" name=" deleted" id="delete" value="<?php echo $row["id"] ?>" >Delete</button>
+</div>
+</li>
+
+<?php } ?>
+</ul>
+<ul class="list" >
+<?php  
+$itemList = get_items_Checked();
+while($row=$itemList->fetch_assoc())
+{
+?>
+<li class="item">
+<p class="it"><?php echo $row["item"]; ?></p>
+<div class="buttons">
+<button type="submit" name=" checked" id="check" value="<?php echo $row["id"]; ?>">Check</button>
+<button type="submit" name=" deleted" id="delete" value="<?php echo $row["id"]; ?>" >Delete</button>
+</div>
 </li>
 
 <?php } ?>
