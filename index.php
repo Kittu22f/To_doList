@@ -8,17 +8,17 @@
 <body>
 <div class = "container"> 
 <h1 class="top-heading">ToDo List Application</h1>
-<form action="" method="post">
+<form action="handleAction.php" method="post">
 <div class="input-container">
 <input type="text" name="inputBox" id="inputBox">
-<button type="submit" id = "add">ADD</button>
+<button type="submit"  name = "add" id = "add">ADD</button>
 </div>
 <ul class="list" >
 <li class="item">
     <p class="it">Item1</p>
     <div class="buttons">
-    <button type="submit" name=" " id="check">Check</button>
-    <button type="submit" name=" " id="delete">Delete</button>
+    <button type="submit" name=" checked" id="check">Check</button>
+    <button type="submit" name=" deleted" id="delete">Delete</button>
     </div>
 </li>
 </ul>
@@ -28,8 +28,8 @@
     <p class="it">Item1</p>
    
     <div class="buttons">
-    <button type="submit" name=" " id="check">Check</button>
-    <button type="submit" name=" " id="delete">Delete</button>
+    <button type="submit" name="checked " id="check">Check</button>
+    <button type="submit" name=" deleted" id="delete">Delete</button>
     </div>
 </li>
 </ul>
